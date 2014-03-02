@@ -4,6 +4,8 @@ pac-ext
 Small collection of experimental cli tools for the
 [pac](https://github.com/soveran/pac) library.
 
+index.txt documents all the name, url, shasum extensions.
+
 ==  pac-ls
     
 Lists all the libraries in packages in a name, 7-char
@@ -16,3 +18,8 @@ shasum format, e.g.
 
 A helper utility used by pac-ls to display each line
 of packages.
+
+== pac-add
+
+Easily add a name / url pair and calculate the shasum
+on the fly.
