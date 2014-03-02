@@ -1,0 +1,31 @@
+pac-ext
+-------
+
+Small collection of experimental cli tools for the
+[pac](https://github.com/soveran/pac) library.
+
+==  pac-ls
+    
+Lists all the libraries in packages in a name, 7-char
+shasum format, e.g.
+
+    resp 31bf5e0
+    ohm  f122eed
+
+== pac-show
+
+A helper utility used by pac-ls to display each line
+of packages.
+
+== pac-add    
+
+Adds a line in packages given a name and url and pre-calculates
+the shasum for you.
+
+Of course the onus is on the developer to verify that the URL
+is trustworthy.
+
+Example:
+
+    pac-add ohm https://raw.github.com/amakawa/ohm/0.0.1/ohm.lua
+

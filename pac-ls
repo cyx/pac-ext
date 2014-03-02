@@ -1,0 +1,9 @@
+#!/usr/bin/env rc
+
+# Usage: pac-ls
+if (! ~ $#* 0) {
+	printf 'usage: pac-ls\n'
+	exit
+}
+
+cat packages | xargs -n 3 pac-show

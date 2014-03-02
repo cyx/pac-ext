@@ -1,0 +1,11 @@
+#!/usr/bin/env rc
+
+# Usage: pac-show <name> <shasum>
+
+lib = $1
+sha = $2
+
+# Use a short sha for the file name
+short = `{ echo $sha | cut -c 1-7 }
+
+printf '%s-%s\n' $lib $short
