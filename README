@@ -16,16 +16,3 @@ shasum format, e.g.
 
 A helper utility used by pac-ls to display each line
 of packages.
-
-== pac-add    
-
-Adds a line in packages given a name and url and pre-calculates
-the shasum for you.
-
-Of course the onus is on the developer to verify that the URL
-is trustworthy.
-
-Example:
-
-    pac-add ohm https://raw.github.com/amakawa/ohm/0.0.1/ohm.lua
-
