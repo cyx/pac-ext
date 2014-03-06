@@ -1,7 +1,10 @@
 #!/usr/bin/env rc
 
-# Usage: pac-show <name> <shasum>
-
+# Avoid running this script if no arguments are
+# passed. Happens when packages is empty and
+# pac-ls pipes xargs through.
+if (~ $#* 0) exit
+	
 lib = $1
 sha = $2
 
