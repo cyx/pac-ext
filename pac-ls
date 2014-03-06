@@ -6,4 +6,9 @@ if (! ~ $#* 0) {
 	exit
 }
 
+if (! test -f packages) {
+	printf 'error: packages missing\n'
+	exit 1
+}
+
 cat packages | xargs -n 3 pac-show
